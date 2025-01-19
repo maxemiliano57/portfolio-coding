@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey – Max Rivera</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/process_form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Survey Form</h1>
+    </header>
+    <main>
+        <!-- Survey Form -->
+        <form id="surveyForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <!-- First Name -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+                <span id="firstNameNow"></span>
+
+                <!-- Last Name -->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+                <span id="lastNameNow"></span>
+
+                <!-- Phone Number -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <span id="phoneNow"></span>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailNow"></span>
+
+                <!-- Website URL -->
+                <label for="website">Website URL:</label>
+                <input type="url" id="website" name="website">
+                <span id="websiteNow"></span>
+            </fieldset>
+
+            <fieldset>
+                <legend>Survey Questions</legend>
+
+                <!-- Coding Interest -->
+                <label>Do you enjoy coding?</label><br>
+                <input type="radio" id="codingYes" name="coding" value="Yes">
+                <label for="codingYes">Yes</label>
+                <input type="radio" id="codingNo" name="coding" value="No">
+                <label for="codingNo">No</label>
+                <br>
+
+                <!-- Preferred Language -->
+                <label>Preferred coding language:</label><br>
+                <input type="radio" id="langJavaScript" name="language" value="JavaScript">
+                <label for="langJavaScript">JavaScript</label>
+                <input type="radio" id="langPython" name="language" value="Python">
+                <label for="langPython">Python</label>
+            </fieldset>
+
+            <button type="button" onclick="displayResults()">Submit</button>
+        </form>
+        <div id="results"></div>
+    </main>
+    <footer>Created for DIG 3716c by Max Rivera</footer>
+</body>
+
+</html>
